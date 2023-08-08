@@ -36,53 +36,6 @@ module.exports = {
 };
 ```
 
-## host on github pages
-
-Install `gh-pages` npm package:
-
-```sh
-npm install gh-pages --save-dev
-```
-
-Add a `homepage` property to package.json:
-
-```js
-"homepage": "https://binlecode.github.io/example-todo-nextjs"
-```
-
-Add two commands to `scripts`:
-
-```js
-"scripts": {
-  ...
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build --src "
-}
-```
-
-Push the app to the GitHub repository:
-
-```sh
-# with custom commit message
-npm run deploy -- -m "deploy example-todo-nextjs app"
-npm run deploy --
-
-```
-
-That will cause the predeploy and deploy scripts defined in package.json to run.
-
-The predeploy script will build a distributable version of the React app and 
-store it in a folder named build. 
-Then, the deploy script will push the contents of that folder to a new commit 
-on the gh-pages branch of the GitHub repository, creating that branch if it 
-doesn't already exist.
-
-
-
-
-"scripts": { "gh-pages": "gh-pages --dist . --src '[index.html,dist/**,CNAME]'" }
-
-
 ## source code formatter
 
 Prettier is used to format the source code:

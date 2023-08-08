@@ -2,17 +2,11 @@
   "name": "example-todo-nextjs",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://binlecode.github.io/example-todo-nextjs",
-  "repository": {
-    "url": "https://github.com-binlecode/binlecode/example-todo-nextjs.git"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "lint": "next lint"
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
