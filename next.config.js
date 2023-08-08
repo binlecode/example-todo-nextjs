@@ -4,7 +4,7 @@ let assetPrefix = "";
 let basePath = "/";
 
 // todo: get this from env var
-deployToGhPages = True;
+const deployToGhPages = true;
 
 if (deployToGhPages) {
   const repo = "example-todo-nextjs";
